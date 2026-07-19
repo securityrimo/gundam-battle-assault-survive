@@ -10,5 +10,8 @@
   - [🚧 알려진 한계](patch-notes.md?id=미번역-항목-알려진-한계)
   - [🔧 개발 기록](dev-log.md)
 
+- **다운로드**
+  - [⬇️ GAS_KR_v1.0.xdelta](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/raw/main/GAS_KR_v1.0.xdelta)
+
 - **링크**
   - [<img src="https://img.shields.io/badge/GitHub-저장소-0a3d91?logo=github" alt="GitHub">](https://github.com/kimjh-eclipse/gundam-battle-assault-survive)

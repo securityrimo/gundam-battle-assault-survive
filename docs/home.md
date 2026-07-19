@@ -5,6 +5,8 @@
   <img src="https://img.shields.io/badge/번역-한국어-success" alt="한국어">
 </p>
 
+> ⬇️ **패치 다운로드**: [GAS_KR_v1.0.xdelta](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/raw/main/GAS_KR_v1.0.xdelta) (약 4.1MB)
+
 # 기동전사 건담 어설트 서바이브 한국어 패치
 
 PSP용 **기동전사 건담 어설트 서바이브**(機動戦士ガンダム アサルトサヴァイブ, 반다이남코, 2010)를 한국어로 번역한 팬 패치입니다.
@@ -28,7 +30,7 @@ PSP용 **기동전사 건담 어설트 서바이브**(機動戦士ガンダム �
 1. 원본 일본판 ISO를 준비합니다. **(이 저장소는 게임 이미지를 포함하지 않습니다.)**
    - 파일: `Gundam Assault Survive (Japan).iso` (854,491,136 bytes)
    - SHA-256: `2CA94945B4E72CADA3B79CD92954704DE6B43326A734116053BC572834039664`
-2. [패치 파일](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/releases/download/v1.0/GAS_KR_v1.0.xdelta)을 내려받아 xdelta3(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
+2. [패치 파일 `GAS_KR_v1.0.xdelta`](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/raw/main/GAS_KR_v1.0.xdelta)을 내려받아 xdelta3(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
 
    ```bash
    xdelta3 -d -s "Gundam Assault Survive (Japan).iso" GAS_KR_v1.0.xdelta "Gundam Assault Survive (Korean).iso"
