@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>건담 어설트 서바이브 한국어 패치</title>
+  <meta name="description" content="PSP 기동전사 건담 어설트 서바이브(반다이남코) 한국어 번역 패치 문서" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root {
+      --gundam-blue: #0a3d91;
+      --gundam-blue-deep: #06285f;
+      --gundam-red: #c8102e;
+      --gundam-gold: #f5b301;
+      --ink: #16181d;
+      --theme-color: #0a3d91;
+    }
+    * { -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Noto Sans KR', -apple-system, 'Segoe UI', 'Malgun Gothic', sans-serif; }
+
+    /* ---- 본문 ---- */
+    .markdown-section { max-width: 860px; }
+    .markdown-section h1, .markdown-section h2 {
+      font-family: 'Noto Serif KR', 'Noto Sans KR', serif;
+      letter-spacing: -0.01em;
+    }
+    .markdown-section h1 { font-weight: 900; }
+    .markdown-section h2 {
+      font-weight: 700; border-bottom: 2px solid #e9edf4;
+      padding-bottom: .3em; margin-top: 2.4rem;
+    }
+    .markdown-section h2::before {
+      content: ""; display: inline-block; width: .5em; height: .5em;
+      margin-right: .5em; background: var(--gundam-red);
+      transform: rotate(45deg); vertical-align: middle;
+    }
+    .markdown-section a { color: var(--gundam-blue); font-weight: 500; }
+    .markdown-section a:hover { color: var(--gundam-blue-deep); text-decoration: underline; }
+    .markdown-section tr:nth-child(2n) { background: #f3f6fb; }
+    .markdown-section th { background: var(--gundam-blue); color: #fff; font-weight: 700; }
+    .markdown-section table { border-collapse: collapse; }
+    .markdown-section td, .markdown-section th { border: 1px solid #d5deec; }
+    .markdown-section blockquote {
+      border-left: 4px solid var(--gundam-gold); background: #fff8e6;
+      color: #5a4a12; border-radius: 0 6px 6px 0;
+    }
+    .markdown-section code { color: var(--gundam-blue-deep); background: #eef2f9; }
+    .markdown-section pre { background: #10131a; }
+    .markdown-section pre > code { color: #e6ecf5; background: transparent; }
+
+    /* ---- 사이드바 ---- */
+    .sidebar { border-right: 1px solid #e2e8f2; }
+    .sidebar .app-name-link { color: var(--gundam-blue) !important; font-weight: 900; }
+    .sidebar ul li a { color: #3c434f; }
+    .sidebar ul li.active > a {
+      color: var(--gundam-blue); font-weight: 700; border-right: 3px solid var(--gundam-red);
+    }
+    .app-name-link img, .sidebar-nav > p:first-child { font-weight: 900; }
+
+    /* 배지 줄 */
+    .badges img { margin: 2px 4px 2px 0; }
+  </style>
+</head>
+<body>
+  <div id="app">불러오는 중…</div>
+  <script>
+    window.$docsify = {
+      name: '🤖 건담 어설트 서바이브<br><small style="font-weight:400;opacity:.7">한국어 패치</small>',
+      repo: 'https://github.com/kimjh-eclipse/gundam-battle-assault-survive',
+      homepage: 'home.md',
+      loadSidebar: true,
+      loadNavbar: false,
+      coverpage: false,
+      auto2top: true,
+      maxLevel: 3,
+      subMaxLevel: 3,
+      relativePath: true,
+      notFoundPage: true,
+      search: {
+        placeholder: '문서 검색…',
+        noData: '검색 결과가 없습니다.',
+        depth: 4
+      },
+      pagination: {
+        previousText: '이전',
+        nextText: '다음',
+        crossChapter: true
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>
