@@ -12,16 +12,20 @@ PSP용 **기동전사 건담 어설트 서바이브**(機動戦士ガンダム �
 1. 원본 일본판 ISO를 준비합니다. (이 저장소는 게임 이미지를 포함하지 않습니다)
    - 파일: `Gundam Assault Survive (Japan).iso` (854,491,136 bytes)
    - SHA-256: `2CA94945B4E72CADA3B79CD92954704DE6B43326A734116053BC572834039664`
-2. [`GAS_KR_v1.0.xdelta`](GAS_KR_v1.0.xdelta)를 내려받아 xdelta3(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
+2. [`GAS_KR_v1.1.xdelta`](GAS_KR_v1.1.xdelta)를 내려받아 xdelta3(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
    ```
-   xdelta3 -d -s "Gundam Assault Survive (Japan).iso" GAS_KR_v1.0.xdelta "Gundam Assault Survive (Korean).iso"
+   xdelta3 -d -s "Gundam Assault Survive (Japan).iso" GAS_KR_v1.1.xdelta "Gundam Assault Survive (Korean).iso"
    ```
 3. 적용 결과 확인 (선택):
-   - 한국어판 SHA-256: `F41375D9304432BFE4064911EC5D44872F7D84394823B1F48ACD8CAB096611A7`
+   - 한국어판 SHA-256: `36FFCF6B1A7E4A6EA07E0CAF0409FD124AFD3F11D88EFE14AD23C8A352349AB3`
 
 에뮬레이터(PPSSPP) 및 CFW 실기에서 플레이 가능합니다.
 
-## 번역 범위 (v1.0)
+> **v1.1 (2026-07-26)** — 일부 미션에서 에어리어 전환이 되지 않아 진행할 수 없던 문제를 수정하고,
+> 결과화면(BATTLE RESULT) 라벨을 한글화했습니다. 진행 안정성을 위해 캐릭터·파일럿 고유명은 원문으로 유지합니다.
+> 자세한 내용은 [CHANGELOG](CHANGELOG.md) 참고. (v1.0에는 위 진행불가 문제가 있어 v1.1 사용을 권장합니다.)
+
+## 번역 범위
 
 - **시대 도입 내레이션(프롤로그)** 및 미션 브리핑·전투 무전 4,603문자열
 - **미션 데이터**: 성립/실패 조건 등 미션 텍스트
@@ -38,7 +42,8 @@ PSP용 **기동전사 건담 어설트 서바이브**(機動戦士ガンダム �
 
 | 경로 | 내용 |
 |---|---|
-| `GAS_KR_v1.0.xdelta` | 한국어 패치 본체 (xdelta3 형식) |
+| `GAS_KR_v1.1.xdelta` | 한국어 패치 본체 (xdelta3 형식, 최신) |
+| `GAS_KR_v1.0.xdelta` | 이전 버전 (진행불가 문제 있음 — v1.1 사용 권장) |
 | `docs/patch-notes.md` | 패치노트 (적용법·번역 범위·알려진 한계) |
 | `docs/dev-log.md` | 리버스 엔지니어링·한글화 작업 기록 (포맷 규명, 기법, 교훈) |
 | `docs/index.html` | 문서 사이트(Docsify) 진입점 — GitHub Pages로 호스팅 |

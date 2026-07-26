@@ -1,11 +1,11 @@
 <p class="badges">
-  <img src="https://img.shields.io/badge/버전-v1.0-0a3d91" alt="버전">
+  <img src="https://img.shields.io/badge/버전-v1.1-0a3d91" alt="버전">
   <img src="https://img.shields.io/badge/플랫폼-PSP-c8102e" alt="플랫폼">
   <img src="https://img.shields.io/badge/형식-xdelta3-informational" alt="형식">
   <img src="https://img.shields.io/badge/번역-한국어-success" alt="한국어">
 </p>
 
-> ⬇️ **패치 다운로드**: [GAS_KR_v1.0.xdelta](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/raw/main/GAS_KR_v1.0.xdelta) (약 4.1MB)
+> ⬇️ **패치 다운로드**: [GAS_KR_v1.1.xdelta](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/raw/main/GAS_KR_v1.1.xdelta) (약 4.1MB)
 
 # 기동전사 건담 어설트 서바이브 한국어 패치
 
@@ -22,21 +22,25 @@ PSP용 **기동전사 건담 어설트 서바이브**(機動戦士ガンダム �
 | 대상 게임 | Gundam Assault Survive (J) · 854MB · 디스크 ID ULJS-00281 |
 | 원본 SHA-256 | `2CA94945…39664` |
 | 패치 형식 | xdelta3 (`.xdelta`) |
-| 최신 버전 | **v1.0** |
+| 최신 버전 | **v1.1** (2026-07-26) |
 | 동작 확인 | PPSSPP · CFW 실기 |
+
+> **v1.1 변경점** — 일부 미션에서 에어리어 전환이 되지 않아 진행할 수 없던 문제 수정,
+> 결과화면(BATTLE RESULT) 라벨 한글화. 진행 안정성을 위해 캐릭터·파일럿 고유명은 원문으로 유지합니다.
+> ([전체 변경 내역](patch-notes.md))
 
 ## 설치 및 적용
 
 1. 원본 일본판 ISO를 준비합니다. **(이 저장소는 게임 이미지를 포함하지 않습니다.)**
    - 파일: `Gundam Assault Survive (Japan).iso` (854,491,136 bytes)
    - SHA-256: `2CA94945B4E72CADA3B79CD92954704DE6B43326A734116053BC572834039664`
-2. [패치 파일 `GAS_KR_v1.0.xdelta`](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/raw/main/GAS_KR_v1.0.xdelta)을 내려받아 xdelta3(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
+2. [패치 파일 `GAS_KR_v1.1.xdelta`](https://github.com/kimjh-eclipse/gundam-battle-assault-survive/raw/main/GAS_KR_v1.1.xdelta)을 내려받아 xdelta3(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
 
    ```bash
-   xdelta3 -d -s "Gundam Assault Survive (Japan).iso" GAS_KR_v1.0.xdelta "Gundam Assault Survive (Korean).iso"
+   xdelta3 -d -s "Gundam Assault Survive (Japan).iso" GAS_KR_v1.1.xdelta "Gundam Assault Survive (Korean).iso"
    ```
 3. 적용 결과를 확인합니다 (선택).
-   - 한국어판 SHA-256: `F41375D9304432BFE4064911EC5D44872F7D84394823B1F48ACD8CAB096611A7`
+   - 한국어판 SHA-256: `36FFCF6B1A7E4A6EA07E0CAF0409FD124AFD3F11D88EFE14AD23C8A352349AB3`
 
 > 💡 GUI 툴만 쓰신다면 **xdeltaUI**에서 원본 ISO를 Source, 패치를 Patch로 지정하고 Apply Patch를 누르면 됩니다.
 
@@ -56,6 +60,7 @@ PSP용 **기동전사 건담 어설트 서바이브**(機動戦士ガンダム �
 - **샵 화면**: 파일럿·파츠·스킬·칭호·개발 계획·시크릿, 표 헤더
 - **VS 배틀 규정 화면**: 모드명·양쪽 REGULATION 항목·결정/초기 설정 복원
 - **VS 편성 선택**: 파일럿·자동 선택·사용 안 함
+- **결과화면(BATTLE RESULT)**: 보너스·집계 라벨, 스탯 라벨 *(v1.1)*
 - **메인 메뉴 우측 대시보드**: 소지금·플레이 시간·전투 기록(출격 횟수·격추수·파츠·미션 등)
 
 전체 변경 내역과 미번역 잔여 항목은 **[📝 패치노트](patch-notes.md)** 에 정리되어 있습니다.
@@ -64,7 +69,7 @@ PSP용 **기동전사 건담 어설트 서바이브**(機動戦士ガンダム �
 
 | 경로 | 내용 |
 |---|---|
-| `GAS_KR_v1.0.xdelta` | 한국어 패치 본체 |
+| `GAS_KR_v1.1.xdelta` | 한국어 패치 본체 (최신) |
 | `docs/patch-notes.md` | 패치노트 (적용법 · 번역 범위 · 알려진 한계) |
 | `docs/dev-log.md` | 리버스 엔지니어링 · 한글화 작업 기록 |
 | `tools/` | 언팩/리팩, RAIC 코덱, 폰트 주입, GIM 식자, EBOOT/FES 패치, 에뮬레이터 자동화 도구 |
